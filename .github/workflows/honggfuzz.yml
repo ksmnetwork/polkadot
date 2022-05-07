@@ -1,8 +1,8 @@
 name: Run nightly fuzzer jobs
 
-on:
-  schedule:
-    - cron: '0 0 * * *'
+on: workflow_dispatch
+#  schedule:
+#    - cron: '0 0 * * *'
 
 jobs:
   xcm-fuzzer:
