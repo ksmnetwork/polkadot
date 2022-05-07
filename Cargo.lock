@@ -6054,9 +6054,9 @@ dependencies = [
 
 [[package]]
 name = "parity-db"
-version = "0.3.12"
+version = "0.3.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6e73cd0b0a78045276b19eaae8eaaa20e44a1da9a0217ff934a810d9492ae701"
+checksum = "55a7901b85874402471e131de3332dde0e51f38432c69a3853627c8e25433048"
 dependencies = [
  "blake2-rfc",
  "crc32fast",
@@ -6451,6 +6451,8 @@ dependencies = [
  "polkadot-node-subsystem-test-helpers",
  "polkadot-node-subsystem-util",
  "polkadot-primitives",
+ "rand 0.8.5",
+ "rand_chacha 0.3.1",
  "sp-application-crypto",
  "sp-core",
  "sp-keyring",
@@ -6956,6 +6958,7 @@ name = "polkadot-node-core-provisioner"
 version = "0.9.19"
 dependencies = [
  "bitvec",
+ "fatality",
  "futures 0.3.21",
  "futures-timer",
  "polkadot-node-primitives",
@@ -7106,6 +7109,7 @@ dependencies = [
  "polkadot-node-primitives",
  "polkadot-primitives",
  "rand 0.8.5",
+ "rand_chacha 0.3.1",
  "sc-authority-discovery",
  "sc-network",
  "strum 0.24.0",
